@@ -1,47 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="/home/seancrwhite/Github/Chordian/backend/backend.workspace">
-  <int Value="1" Name="m_selectedTab"/>
-  <wxString Value="/home/seancrwhite/Github/Chordian/backend/backend.workspace" Name="m_workspaceName"/>
+<Session Name="/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend/backend.workspace">
+  <int Value="0" Name="m_selectedTab"/>
+  <wxString Value="/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend/backend.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="/home/seancrwhite/Github/Chordian/backend/ChordProcessing/main.cpp" Name="FileName"/>
+      <wxString Value="/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend/ChordProcessing/ChordBuilder.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="12" Name="CurrentLine"/>
+      <int Value="14" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="/home/seancrwhite/Github/Chordian/backend/ChordProcessing/ChordBuilder.cpp" Name="FileName"/>
+      <wxString Value="/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend/ChordProcessing/ChordBuilder.h" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="3" Name="CurrentLine"/>
+      <int Value="5" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="/home/seancrwhite/Github/Chordian/backend/ChordProcessing/ChordDetector.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="28" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/seancrwhite/Github/Chordian/backend/ChordProcessing/ChordDetector.h" Name="FileName"/>
-      <int Value="33" Name="FirstVisibleLine"/>
+      <wxString Value="/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend/ChordProcessing/ChordDetector.cpp" Name="FileName"/>
+      <int Value="157" Name="FirstVisibleLine"/>
       <int Value="21" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="/home/seancrwhite/Github/Chordian/backend/ChordProcessing/Chromagram.cpp" Name="FileName"/>
-      <int Value="62" Name="FirstVisibleLine"/>
-      <int Value="21" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/seancrwhite/Github/Chordian/backend/ChordProcessing/Chromagram.h" Name="FileName"/>
-      <int Value="60" Name="FirstVisibleLine"/>
-      <int Value="21" Name="CurrentLine"/>
+      <wxString Value="/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend/ChordProcessing/Chromagram.cpp" Name="FileName"/>
+      <int Value="231" Name="FirstVisibleLine"/>
+      <int Value="156" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
