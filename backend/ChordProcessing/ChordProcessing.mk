@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Chromagram.cpp$(ObjectSuffix) $(IntermediateDirectory)/ChordDetector.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Chromagram.cpp$(ObjectSuffix) $(IntermediateDirectory)/ChordDetector.cpp$(ObjectSuffix) $(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix) 
 
 
 
@@ -114,6 +114,14 @@ $(IntermediateDirectory)/ChordDetector.cpp$(DependSuffix): ChordDetector.cpp
 
 $(IntermediateDirectory)/ChordDetector.cpp$(PreprocessSuffix): ChordDetector.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ChordDetector.cpp$(PreprocessSuffix) "ChordDetector.cpp"
+
+$(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix): ChordBuilder.cpp $(IntermediateDirectory)/ChordBuilder.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/seancrwhite/Github/Chordian/backend/ChordProcessing/ChordBuilder.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/ChordBuilder.cpp$(DependSuffix): ChordBuilder.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/ChordBuilder.cpp$(DependSuffix) -MM "ChordBuilder.cpp"
+
+$(IntermediateDirectory)/ChordBuilder.cpp$(PreprocessSuffix): ChordBuilder.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ChordBuilder.cpp$(PreprocessSuffix) "ChordBuilder.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

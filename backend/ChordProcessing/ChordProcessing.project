@@ -94,5 +94,6 @@
     <File Name="main.cpp"/>
     <File Name="Chromagram.cpp"/>
     <File Name="ChordDetector.cpp"/>
+    <File Name="ChordBuilder.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>
