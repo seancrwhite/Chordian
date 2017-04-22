@@ -1,5 +1,5 @@
-./Debug/ChordBuilder.cpp.o: ChordBuilder.cpp Chromagram.h ChordDetector.h \
-  ChordBuilder.h
+Debug/ChordBuilder.cpp.o: ChordBuilder.cpp Chromagram.h ChordDetector.h \
+ ChordBuilder.h
 
 Chromagram.h:
 

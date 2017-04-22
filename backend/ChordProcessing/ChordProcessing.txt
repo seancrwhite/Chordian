@@ -1,1 +1,1 @@
-./Debug/main.cpp.o ./Debug/Chromagram.cpp.o ./Debug/ChordDetector.cpp.o
+./Debug/main.cpp.o ./Debug/Chromagram.cpp.o ./Debug/ChordDetector.cpp.o ./Debug/ChordBuilder.cpp.o

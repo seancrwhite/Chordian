@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=ChordProcessing
 ConfigurationName      :=Debug
-WorkspacePath          :="/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend"
-ProjectPath            :="/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend/ChordProcessing"
+WorkspacePath          := "/home/seancrwhite/Github/Chordian/backend"
+ProjectPath            := "/home/seancrwhite/Github/Chordian/backend/ChordProcessing"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Matthew Doran
-Date                   :=22/04/2017
-CodeLitePath           :="/Users/Matthew/Library/Application Support/codelite"
+User                   :=Sean White
+Date                   :=22/04/17
+CodeLitePath           :="/home/seancrwhite/.codelite"
 LinkerName             :=/usr/bin/g++
-SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
+SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -50,7 +50,7 @@ LibPath                := $(LibraryPathSwitch).
 AR       := /usr/bin/ar rcu
 CXX      := /usr/bin/g++
 CC       := /usr/bin/gcc
-CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
+CXXFLAGS :=  -g -O0 -std=c++14 -std=c++11 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
 AS       := /usr/bin/as
@@ -59,7 +59,7 @@ AS       := /usr/bin/as
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
+CodeLiteDir:=/usr/share/codelite
 Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Chromagram.cpp$(ObjectSuffix) $(IntermediateDirectory)/ChordDetector.cpp$(ObjectSuffix) $(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix) 
 
 
@@ -92,36 +92,36 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend/ChordProcessing/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/seancrwhite/Github/Chordian/backend/ChordProcessing/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
 
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
 
 $(IntermediateDirectory)/Chromagram.cpp$(ObjectSuffix): Chromagram.cpp $(IntermediateDirectory)/Chromagram.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend/ChordProcessing/Chromagram.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Chromagram.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/seancrwhite/Github/Chordian/backend/ChordProcessing/Chromagram.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Chromagram.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Chromagram.cpp$(DependSuffix): Chromagram.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Chromagram.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Chromagram.cpp$(DependSuffix) -MM Chromagram.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Chromagram.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Chromagram.cpp$(DependSuffix) -MM "Chromagram.cpp"
 
 $(IntermediateDirectory)/Chromagram.cpp$(PreprocessSuffix): Chromagram.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Chromagram.cpp$(PreprocessSuffix) Chromagram.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Chromagram.cpp$(PreprocessSuffix) "Chromagram.cpp"
 
 $(IntermediateDirectory)/ChordDetector.cpp$(ObjectSuffix): ChordDetector.cpp $(IntermediateDirectory)/ChordDetector.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend/ChordProcessing/ChordDetector.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ChordDetector.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/seancrwhite/Github/Chordian/backend/ChordProcessing/ChordDetector.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ChordDetector.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/ChordDetector.cpp$(DependSuffix): ChordDetector.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/ChordDetector.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/ChordDetector.cpp$(DependSuffix) -MM ChordDetector.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/ChordDetector.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/ChordDetector.cpp$(DependSuffix) -MM "ChordDetector.cpp"
 
 $(IntermediateDirectory)/ChordDetector.cpp$(PreprocessSuffix): ChordDetector.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ChordDetector.cpp$(PreprocessSuffix) ChordDetector.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ChordDetector.cpp$(PreprocessSuffix) "ChordDetector.cpp"
 
 $(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix): ChordBuilder.cpp $(IntermediateDirectory)/ChordBuilder.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend/ChordProcessing/ChordBuilder.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/seancrwhite/Github/Chordian/backend/ChordProcessing/ChordBuilder.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/ChordBuilder.cpp$(DependSuffix): ChordBuilder.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/ChordBuilder.cpp$(DependSuffix) -MM ChordBuilder.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/ChordBuilder.cpp$(DependSuffix) -MM "ChordBuilder.cpp"
 
 $(IntermediateDirectory)/ChordBuilder.cpp$(PreprocessSuffix): ChordBuilder.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ChordBuilder.cpp$(PreprocessSuffix) ChordBuilder.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ChordBuilder.cpp$(PreprocessSuffix) "ChordBuilder.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

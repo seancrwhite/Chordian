@@ -4,6 +4,7 @@
 #define CHORDBUILDER_H
 
 #include <vector>
+#include <string>
 
 class ChordBuilder
 {
@@ -11,9 +12,12 @@ class ChordBuilder
 		/** Constructor */
 		ChordBuilder();
 		      /** Accepts some vector of 12 doubles*/
-			void buildChord(std::vector<double> chroma);
+			std::string buildChord(std::vector<double> frame);
 		      /** Accepts some array of 12 doubles*/
-			void buildChord(double* chroma);
+			std::string buildChord(double* frame);
+            
+    private:
+        std::string _buildChordForChromogram(std::vector<double> chroma);
 };
 
 #endif
