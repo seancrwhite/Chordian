@@ -1,0 +1,134 @@
+##
+## Auto Generated makefile by CodeLite IDE
+## any manual changes will be erased      
+##
+## Debug
+ProjectName            :=ChordProcessing
+ConfigurationName      :=Debug
+WorkspacePath          := "/home/seancrwhite/Github/Chordian/backend"
+ProjectPath            := "/home/seancrwhite/Github/Chordian/backend/ChordProcessing"
+IntermediateDirectory  :=./Debug
+OutDir                 := $(IntermediateDirectory)
+CurrentFileName        :=
+CurrentFilePath        :=
+CurrentFileFullPath    :=
+User                   :=Sean White
+Date                   :=22/04/17
+CodeLitePath           :="/home/seancrwhite/.codelite"
+LinkerName             :=/usr/bin/g++
+SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
+ObjectSuffix           :=.o
+DependSuffix           :=.o.d
+PreprocessSuffix       :=.i
+DebugSwitch            :=-g 
+IncludeSwitch          :=-I
+LibrarySwitch          :=-l
+OutputSwitch           :=-o 
+LibraryPathSwitch      :=-L
+PreprocessorSwitch     :=-D
+SourceSwitch           :=-c 
+OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
+Preprocessors          :=
+ObjectSwitch           :=-o 
+ArchiveOutputSwitch    := 
+PreprocessOnlySwitch   :=-E
+ObjectsFileList        :="ChordProcessing.txt"
+PCHCompileFlags        :=
+MakeDirCommand         :=mkdir -p
+LinkOptions            :=  
+IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
+IncludePCH             := 
+RcIncludePath          := 
+Libs                   := 
+ArLibs                 :=  
+LibPath                := $(LibraryPathSwitch). 
+
+##
+## Common variables
+## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
+##
+AR       := /usr/bin/ar rcu
+CXX      := /usr/bin/g++
+CC       := /usr/bin/gcc
+CXXFLAGS :=  -g -O0 -std=c++14 -std=c++11 -Wall $(Preprocessors)
+CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
+ASFLAGS  := 
+AS       := /usr/bin/as
+
+
+##
+## User defined environment variables
+##
+CodeLiteDir:=/usr/share/codelite
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Chromagram.cpp$(ObjectSuffix) $(IntermediateDirectory)/ChordDetector.cpp$(ObjectSuffix) $(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix) 
+
+
+
+Objects=$(Objects0) 
+
+##
+## Main Build Targets 
+##
+.PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
+all: $(OutputFile)
+
+$(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
+	@$(MakeDirCommand) $(@D)
+	@echo "" > $(IntermediateDirectory)/.d
+	@echo $(Objects0)  > $(ObjectsFileList)
+	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
+
+MakeIntermediateDirs:
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
+
+
+$(IntermediateDirectory)/.d:
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
+
+PreBuild:
+
+
+##
+## Objects
+##
+$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/seancrwhite/Github/Chordian/backend/ChordProcessing/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
+
+$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
+
+$(IntermediateDirectory)/Chromagram.cpp$(ObjectSuffix): Chromagram.cpp $(IntermediateDirectory)/Chromagram.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/seancrwhite/Github/Chordian/backend/ChordProcessing/Chromagram.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Chromagram.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Chromagram.cpp$(DependSuffix): Chromagram.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Chromagram.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Chromagram.cpp$(DependSuffix) -MM "Chromagram.cpp"
+
+$(IntermediateDirectory)/Chromagram.cpp$(PreprocessSuffix): Chromagram.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Chromagram.cpp$(PreprocessSuffix) "Chromagram.cpp"
+
+$(IntermediateDirectory)/ChordDetector.cpp$(ObjectSuffix): ChordDetector.cpp $(IntermediateDirectory)/ChordDetector.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/seancrwhite/Github/Chordian/backend/ChordProcessing/ChordDetector.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ChordDetector.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/ChordDetector.cpp$(DependSuffix): ChordDetector.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/ChordDetector.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/ChordDetector.cpp$(DependSuffix) -MM "ChordDetector.cpp"
+
+$(IntermediateDirectory)/ChordDetector.cpp$(PreprocessSuffix): ChordDetector.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ChordDetector.cpp$(PreprocessSuffix) "ChordDetector.cpp"
+
+$(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix): ChordBuilder.cpp $(IntermediateDirectory)/ChordBuilder.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/seancrwhite/Github/Chordian/backend/ChordProcessing/ChordBuilder.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/ChordBuilder.cpp$(DependSuffix): ChordBuilder.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/ChordBuilder.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/ChordBuilder.cpp$(DependSuffix) -MM "ChordBuilder.cpp"
+
+$(IntermediateDirectory)/ChordBuilder.cpp$(PreprocessSuffix): ChordBuilder.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ChordBuilder.cpp$(PreprocessSuffix) "ChordBuilder.cpp"
+
+
+-include $(IntermediateDirectory)/*$(DependSuffix)
+##
+## Clean
+##
+clean:
+	$(RM) -r ./Debug/
+
+
