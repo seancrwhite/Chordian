@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+		<canvas id="myCanvas" width="360" height="360">
+		<script>
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		ctx.strokeStyle='blue';
+		
+		function draw()
+		{
+			setTimeout(clear,150);
+			var loud = Math.random();
+			/*for(x=0; x<360; x += 20){
+				ctx.moveTo(x+5,180);
+				ctx.lineTo(x,180);
+			}*/
+			ctx.moveTo(0,180);
+			var xchange = 10;
+			var ychange = 0;
+			for(x=0; x<=360; x+=1)
+			{
+				if(x<120)
+				{
+					y = 180.0 - loud*(ychange)*Math.sin(xchange*x*Math.PI/180)*120;
+					ctx.lineTo(x,y);
+					ychange+=(1/80);
+				}
+				else if(x>=120 && x<=240)
+				{
+					y = 180.0 - loud*1.5*Math.sin(xchange*x*Math.PI/180)*120;
+					ctx.lineTo(x,y);
+				}
+				else
+				{
+					y = 180.0 - loud*ychange*Math.sin(xchange*x*Math.PI/180)*120;
+					ctx.lineTo(x,y);
+					ychange-=(1/80);
+				}
+			}
+			ctx.stroke();
+			
+			setTimeout(draw,150);
+			
+		}
+		function clear()
+		{
+			var ctx = c.getContext("2d");
+			ctx.clearRect(0, 0, c.width, c.height);
+			ctx.beginPath();
+		}
+		draw();
+		</script>
+		
+    </body>
+</html>
