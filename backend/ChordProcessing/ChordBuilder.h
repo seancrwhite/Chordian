@@ -18,8 +18,16 @@ class ChordBuilder
 
 			int test(int n);
 
-    private:
-        std::string _buildChordForChromogram(std::vector<double> chroma);
+      std::string _buildChordForChromogram(std::vector<double> chroma);
 };
+
+#include "nbind/nbind.h"
+
+NBIND_CLASS(ChordBuilder){
+  construct<>();
+  method(buildChord);
+  method(test);
+  method(_buildChordForChromogram);
+}
 
 #endif
