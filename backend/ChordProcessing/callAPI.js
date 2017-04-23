@@ -1,3 +1,7 @@
+var nbind = require('nbind');
+var lib = nbind.init().lib;
+
+
 //** Testing... */
-var result = builderLib.test(5);
+var result = lib.ChordBuilder.test(5);
 console.log(result);

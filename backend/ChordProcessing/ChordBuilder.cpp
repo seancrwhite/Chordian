@@ -51,3 +51,12 @@ std::string ChordBuilder::_buildChordForChromogram(std::vector<double> chroma){
 
         return chord;
 }
+
+#include "nbind/nbind.h"
+
+NBIND_CLASS(ChordBuilder){
+  construct<>();
+  method(buildChord);
+  method(test);
+  method(_buildChordForChromogram);
+}
