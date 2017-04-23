@@ -15,7 +15,9 @@ class ChordBuilder
 			std::string buildChord(std::vector<double> frame);
 		      /** Accepts some array of 12 doubles*/
 			std::string buildChord(double* frame);
-            
+
+			int test(int n);
+
     private:
         std::string _buildChordForChromogram(std::vector<double> chroma);
 };

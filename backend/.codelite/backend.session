@@ -5,7 +5,7 @@
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend/ChordProcessing/ChordBuilder.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="2" Name="FirstVisibleLine"/>
       <int Value="14" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
@@ -28,6 +28,13 @@
       <wxString Value="/Users/Matthew/Google Drive/dev/projects/code24/Chordian/backend/ChordProcessing/Chromagram.cpp" Name="FileName"/>
       <int Value="231" Name="FirstVisibleLine"/>
       <int Value="156" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/Users/Matthew/Google Drive/dev/projects/code24/Chordian/node/node.workspace" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="10" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
